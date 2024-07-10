@@ -22,5 +22,5 @@ jobs:
       - run: aws s3 sync dist s3://mfe-navi-dashboard/container/latest
         env:
           AWS_ACCESS_KEY_ID: AKIAQLH2ESQL7G6X4TN5
-          AWS_SECRET_ACCESS_KEY: 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
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           region: ap-southeast-1
