@@ -19,8 +19,8 @@ jobs:
       - run: npm install
       - run: npm run build
        
-      - run: aws s3 sync dist s3://${{ secrets.AWS_BUCKET_NAME }}/container/latest
+      - run: aws s3 sync dist s3://mfe-navi-dashboard/container/latest
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          region: ${{ secrets.AWS_REGION }}
+          AWS_ACCESS_KEY_ID: AKIAQLH2ESQL7G6X4TN5
+          AWS_SECRET_ACCESS_KEY: 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
+          region: ap-southeast-1
