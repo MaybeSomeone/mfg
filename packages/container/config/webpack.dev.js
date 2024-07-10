@@ -27,7 +27,7 @@ const devConfig = {
   ],
 
 }
-console.log('commonConfig', JSON.stringify(commonConfig))
-console.log('devConfig', JSON.stringify(devConfig))
+// console.log('commonConfig', JSON.stringify(commonConfig))
+// console.log('devConfig', JSON.stringify(devConfig))
 
 module.exports = merge(commonConfig, devConfig)
