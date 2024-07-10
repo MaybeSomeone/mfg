@@ -25,7 +25,6 @@ const devConfig = {
         shared: packageJson.dependencies
     })
   ],
-
 }
 // console.log('commonConfig', JSON.stringify(commonConfig))
 // console.log('devConfig', JSON.stringify(devConfig))
